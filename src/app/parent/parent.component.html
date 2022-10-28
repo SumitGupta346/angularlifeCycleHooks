@@ -1,0 +1,8 @@
+<h1>parent works!</h1>
+
+<button (click)="toggleChild()">Toggle Child</button>
+<input type="text" [(ngModel)]="username">
+
+<app-child *ngIf="isChild" [username]="username">
+  <h2 #projectedContent>Please tell good morning to everybody...</h2>
+</app-child>
